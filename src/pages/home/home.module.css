@@ -1,0 +1,15 @@
+.homePage{
+    width: 100%;
+    padding-bottom: 17vh;
+   
+background-color: khaki;
+display: flex;
+justify-content: center;
+ 
+}
+.carouselBox{
+    width: 80%;
+    display: flex;
+   margin-top: 4%;
+   
+}

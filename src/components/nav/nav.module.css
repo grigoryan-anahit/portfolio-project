@@ -1,0 +1,36 @@
+.navbar{
+     width: 100%;
+    background-color: burlywood;
+    box-shadow: 20px rgb(114, 77, 77);
+    
+  }
+.navlistWithLogo{
+    width: 90%;
+    display: flex ;
+   align-items: center;
+  
+}
+.logoBox{
+    width: 100px;
+    cursor: pointer;
+    margin-left: 5%;
+    margin-right: 20%;
+}
+.logoBox:hover{
+  transform: scale(1.2);
+}
+.logoImg{
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width:1900px){
+  .logoBox{
+      margin-right: 15%;
+  }
+}
+@media only screen and (max-width:1525px){
+    .logoBox{
+        margin-right: 10%;
+    }
+  
+  }

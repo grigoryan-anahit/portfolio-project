@@ -1,0 +1,36 @@
+.contactsPage{
+    width: 100%;
+    height: auto;
+    
+    background-color: rgb(243, 231, 166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactList{
+  margin: 50px 0;
+}
+.contactItem{
+    display: flex;
+    align-items: center;
+   margin-top: 20px;
+   font-size: 20px;
+   font-weight: 500;
+   color: rgb(131, 95, 69);
+}
+.contactsHeading{
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 50px;
+
+}
+.contactsSpan{
+    font-weight: 600;
+    color: rgb(51, 26, 7);
+    font-size: 30px;
+    margin-right: 5px;
+}
+.contactsIcon{
+    font-size: 30px;
+    margin-right: 10px;
+}

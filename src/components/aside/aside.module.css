@@ -1,0 +1,104 @@
+.aside{
+    width:30%;
+   transform: translate(0);
+ 
+    position: absolute;
+    z-index: 10;
+    transition: 2s;
+}
+.aside.hidden{
+  transform: translate(-100%);
+     transition: 2s;
+}
+
+.cardImgBox{
+    width: 45%;
+    height: auto;
+    margin:0 auto;
+   
+}
+.cardTitle{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+}
+.cardText{
+    font-size:22px;
+    font-weight:600 ;
+
+}
+.card{
+    width: 100%;
+    height: 86.5vh;
+}
+.asideCloseIcon{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 25px;
+    color: black;
+}
+
+@media  only screen and (max-width:1572px){
+    .cardText{
+        font-size:18px;
+        font-weight:400 ;
+    
+    }
+    .aside{
+        width: 40%;
+     }
+    .asideCloseIcon{
+        position: absolute;
+        top: 3%;
+        left: 45%;
+        font-size: 25px;
+        color: black;
+    }
+}
+@media  only screen and (max-width:1275px){
+    .cardText{
+        font-size:16px;
+        font-weight:400 ;
+    
+    }
+    .aside{
+        width: 50%;
+        
+     }
+     .cardImgBox{
+         width: 35%;
+     }
+    .asideCloseIcon{
+        position: absolute;
+        top: 3%;
+        left: 50%;
+        font-size: 25px;
+        color: black;
+    }
+}
+@media  only screen and (max-width:940px){
+    .cardText{
+        font-size:16px;
+        font-weight:400 ;
+    
+    }
+    .cardTitle{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .cardImgBox{
+        width: 30%;
+    }
+    .aside{
+        width: 90%;
+     }
+    .asideCloseIcon{
+        position: absolute;
+        top: 3%;
+        left:95%;
+        font-size: 20px;
+        color: black;
+    }
+}
