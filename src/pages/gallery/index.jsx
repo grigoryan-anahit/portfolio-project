@@ -67,10 +67,10 @@ const videosjsx=VIDEOS.map(video=>{
                   modal: 'customModal',
                  }}
                  showCloseIcon={false}
-              > <Container ><Row ><Col md='12' sm='8' xs='9'  > 
+              > <Container ><Row ><Col lg='12' sm='12' xs='12'  > 
                  <Image src={activeImg.img}  alt={activeImg.alt} className={style.imgItemBig} /> 
                  </Col></Row></Container> 
-                  <FontAwesomeIcon icon={faTimes} size='lg' className={style.closeIcon} color='orange'   cursor='pointer' onClick={modalClose} />  
+                  <FontAwesomeIcon icon={faTimes}  className={style.closeIcon} color='orange'   cursor='pointer' onClick={modalClose} />  
                   <FontAwesomeIcon icon={faChevronRight} size='lg' className={style.nextIcon} color='orange'   cursor='pointer' onClick={nextImage} /> 
                   <FontAwesomeIcon icon={faChevronLeft} size='lg' className={style.prevIcon} color='orange'   cursor='pointer' onClick={prevImage} /> 
       

@@ -1,15 +1,17 @@
 .homePage{
     width: 100%;
-    padding-bottom: 17vh;
+   padding-bottom: 2vh;
    
 background-color: khaki;
 display: flex;
+flex-direction: column;
 justify-content: center;
+align-items: center;
  
 }
-.carouselBox{
-    width: 80%;
-    display: flex;
-   margin-top: 4%;
-   
+
+.carouselBoxTxt{
+   color: rgb(119, 71, 32);
+   text-align: center;
+   padding: 3%;
 }

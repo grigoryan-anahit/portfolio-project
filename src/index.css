@@ -381,11 +381,11 @@ code {
 
 
 .customOverlay {
-    background: rgba(36, 123, 160, 0.7);
+    background: rgba(211, 208, 180, 0.7);
   }
   .customModal {
-    background: #b2dbbf;
-   max-width: 400px;
+    background: #f88e14;
+   max-width: 700px;
     width: 100%;
   }
 
@@ -403,6 +403,11 @@ code {
         font-weight: 600;
       
       }
+}
+.img{
+    width: 100%;
+    border-radius: 20px;
+    border: 5px solid rgb(179, 103, 68);
 }
 
 

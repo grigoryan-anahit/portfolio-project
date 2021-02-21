@@ -4,11 +4,11 @@
  
     position: absolute;
     z-index: 10;
-    transition: 2s;
+    transition: 1.5s;
 }
 .aside.hidden{
   transform: translate(-100%);
-     transition: 2s;
+     transition: 1.5s;
 }
 
 .cardImgBox{
@@ -30,6 +30,7 @@
 .card{
     width: 100%;
     height: 86.5vh;
+    background-color: rgb(179, 151, 107);
 }
 .asideCloseIcon{
     position: absolute;

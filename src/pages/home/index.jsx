@@ -5,13 +5,9 @@ const Home=()=>{
  
   return (
         <div className={style.homePage}>
-           <div className={style.carouselBox}>
-                <CarouselPageText />
-                 <CarouselPage />
-              </div>
-           
-           
-        </div>
+               <div className={style.carouselBoxTxt}><CarouselPageText /></div> 
+                <div className={style.carouselBoxImg}> <CarouselPage /></div>
+             </div>
     )
 }
 export default Home;
