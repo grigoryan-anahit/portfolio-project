@@ -8,7 +8,12 @@ const Menu=({navItems,toggleOpenMenu, menuIsOpen})=>{
    
     return (
         <div>
-            <FontAwesomeIcon icon={!menuIsOpen?faBars:faTimes} color='black' size='3x' className={!menuIsOpen?style.menu:`${style.menu} ${style.menuClose} `}onClick={toggleOpenMenu}/>
+            <FontAwesomeIcon icon={!menuIsOpen?faBars:faTimes} 
+                             color='black' 
+                             size='3x' 
+                             className={!menuIsOpen?style.menu:`${style.menu} ${style.menuClose} `}
+                             onClick={toggleOpenMenu}
+             />
           
             {menuIsOpen && <div className={style.menuNav} >
                   <MenuNavList navItems={navItems} />

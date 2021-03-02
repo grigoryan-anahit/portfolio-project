@@ -28,7 +28,7 @@ class GalleryPage extends React.Component{
  
  const imagesjsx=IMAGES.map(image=>{
     return (
-           <Col lg='3' md='3' sm='4' xs='5' className={style.colImg} key={image.id}>
+           <Col xl='3' lg='4' sm='6' xs='12' className={style.colImg} key={image.id}>
                <img src={image.img}  alt={image.alt} className={style.imgItem} onClick={()=>imgOpen(image,image.id)}/>
           </Col>     
            )
@@ -36,7 +36,7 @@ class GalleryPage extends React.Component{
 //videos map
 const videosjsx=VIDEOS.map(video=>{
   return (
-        <Col lg='2' md='3' sm='4' xs='5' className={style.colVid}  key={video.id}>
+        <Col xl='3' lg='4' sm='6' xs='12' className={style.colVid}  key={video.id}>
             <video src={video.movie}  alt={video.alt}   controls className={style.imgItem} />
         </Col>
       )
@@ -46,11 +46,15 @@ const videosjsx=VIDEOS.map(video=>{
       <>
          <div className={style.galleryPage}>
                  <div className={style.buttonsDiv} >
-                      <button className={photosPageIsOpen?`${style.galleryButtonImg} ${style.galleryButtonClicked}`:style.galleryButtonImg} onClick={showPhotosPage} >ՆԿԱՐՆԵՐ</button>
-                      <button className={!photosPageIsOpen?`${style.galleryButton} ${style.galleryButtonClicked}`:style.galleryButton} onClick={showVideosPage}>ՏԵՍԱՆՅՈՒԹԵՐ</button>
+                      <button className={photosPageIsOpen?`${style.galleryButtonImg} ${style.galleryButtonClicked}`:style.galleryButtonImg}  onClick={showPhotosPage} >
+                             ՆԿԱՐՆԵՐ
+                     </button>
+                      <button className={!photosPageIsOpen?`${style.galleryButton} ${style.galleryButtonClicked}`:style.galleryButton} onClick={showVideosPage}>
+                         ՏԵՍԱՆՅՈՒԹԵՐ
+                     </button>
                    </div> 
                      
-             <Container fluid >
+             <Container fluid className={style.myContainer} >
                  <Row >
                     {photosPageIsOpen?imagesjsx:videosjsx}
                </Row>
@@ -60,7 +64,7 @@ const videosjsx=VIDEOS.map(video=>{
        
            { activeImg && modalIsOpen &&
           
-        <Modal open={modalIsOpen}  onClose={modalClose}
+        <Modal open={modalIsOpen}  onClose={modalClose} 
                   center
                   classNames={{
                   overlay: 'customOverlay',

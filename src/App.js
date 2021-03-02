@@ -72,17 +72,36 @@ class  App extends React.Component{
     return (
       <div className="App" >
       
-         <Nav navItems={navItems}  toggleAsideOpen={toggleAsideOpen} />
-         <Menu navItems={navItems} toggleOpenMenu={toggleOpenMenu} menuIsOpen={menuIsOpen}  />
-         <Aside  asideIsOpen={asideIsOpen} toggleAsideOpen={toggleAsideOpen} />
-        <SmallGroup  smallGroupIsOpen={smallGroupIsOpen} smallGroupClose={smallGroupClose}/>
-        <MiddleGroup middleGroupIsOpen={middleGroupIsOpen} middleGroupClose={middleGroupClose} />
-        <SeniorGroup seniorGroupIsOpen={seniorGroupIsOpen} seniorGroupClose={seniorGroupClose}/>
+         <Nav navItems={navItems}  
+              toggleAsideOpen={toggleAsideOpen} 
+          />
+         <Menu navItems={navItems}
+               toggleOpenMenu={toggleOpenMenu}
+                menuIsOpen={menuIsOpen} 
+         />
+         <Aside  asideIsOpen={asideIsOpen}
+                 toggleAsideOpen={toggleAsideOpen}
+         />
+        <SmallGroup  smallGroupIsOpen={smallGroupIsOpen} 
+                    smallGroupClose={smallGroupClose}
+        />
+        <MiddleGroup middleGroupIsOpen={middleGroupIsOpen}
+                     middleGroupClose={middleGroupClose} 
+        />
+        <SeniorGroup seniorGroupIsOpen={seniorGroupIsOpen} 
+                     seniorGroupClose={seniorGroupClose}
+        />
         
          
          <Route path="/" component={Home}  exact={true}  />
          <Route path="/about" component={About}  />
-         <Route path="/services" render={(props)=><Services smallGroupOpen={smallGroupOpen}  middleGroupOpen={middleGroupOpen} seniorGroupOpen={seniorGroupOpen} />} />
+         <Route path="/services" render={
+                (props)=><Services smallGroupOpen={smallGroupOpen}  
+                middleGroupOpen={middleGroupOpen} 
+                seniorGroupOpen={seniorGroupOpen} 
+                />
+              } 
+        />
          <Route path="/contacts" component={Contacts} />
          <Route path="/gallery"  render={()=> <GalleryPage />} />
 

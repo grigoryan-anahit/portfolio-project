@@ -15,28 +15,25 @@ const Services=({smallGroupOpen,middleGroupOpen,seniorGroupOpen })=>{
                       </div>
               
             <div className={style.groups}>
-            <Card style={{ width: '25rem' }} onMouseOver={smallGroupOpen}>
-                <Card.Img   variant="top" src={img1} />
-                <Card.Body>
-                    <Card.Text style={{textAlign:'center'}}>կրտսեր խումբ</Card.Text>
-                   
-                </Card.Body>
+               <Card className={style.myCard}  onMouseOver={smallGroupOpen}>
+                   <Card.Img   variant="top" src={img1} />
+                        <Card.Body>
+                            <Card.Text style={{textAlign:'center'}}>կրտսեր խումբ</Card.Text>
+                        </Card.Body>
+               </Card>
+
+                <Card  className={style.myCard}  onMouseOver={middleGroupOpen}>
+                   <Card.Img variant="top" src={img2} />
+                        <Card.Body>
+                            <Card.Text style={{textAlign:'center'}}>միջին խումբ</Card.Text>
+                        </Card.Body>
                 </Card>
 
-                <Card style={{ width: '25rem', marginLeft:'4rem' }} onMouseOver={middleGroupOpen}>
-                <Card.Img variant="top" src={img2} />
-                <Card.Body>
-                    <Card.Text style={{textAlign:'center'}}>միջին խումբ</Card.Text>
-                   
-                </Card.Body>
-                </Card>
-
-                <Card style={{ width: '25rem', marginLeft:'4rem' }} onMouseOver={seniorGroupOpen}>
-                <Card.Img variant="top" src={img3} />
-                <Card.Body>
-                    <Card.Text style={{textAlign:'center'}}>ավագ խումբ</Card.Text>
-                   
-                </Card.Body>
+                <Card className={style.myCard}  onMouseOver={seniorGroupOpen}>
+                    <Card.Img variant="top" src={img3} />
+                        <Card.Body>
+                            <Card.Text style={{textAlign:'center'}}>ավագ խումբ</Card.Text>
+                        </Card.Body>
                 </Card>
             </div> 
              <div className={style.footer}></div>

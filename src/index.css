@@ -388,13 +388,24 @@ code {
    max-width: 700px;
     width: 100%;
   }
-
+  @media only screen and (max-width:1770px){
+    .customModal {
+        margin-top: 50%;
+    }
+  }
 .carouselTxt{
   text-transform: uppercase;
   font-size:50px;
   font-weight: 600;
- 
- 
+ padding: 5%;
+ text-align: center;
+ margin-top: 3%;
+}
+
+.img{
+    width: 100%;
+    border-radius: 20px;
+    border: 5px solid rgb(179, 103, 68);
 }
 @media only screen and (max-width:1770px){
     .carouselTxt{
@@ -403,11 +414,6 @@ code {
         font-weight: 600;
       
       }
-}
-.img{
-    width: 100%;
-    border-radius: 20px;
-    border: 5px solid rgb(179, 103, 68);
 }
 
 

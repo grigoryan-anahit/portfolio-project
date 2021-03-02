@@ -24,9 +24,12 @@ class CarouselPage extends Component {
           <MDBCarouselInner>
             <MDBCarouselItem itemId="1">
               <MDBView>
+                <p className="d-block w-100 carouselTxt">
+                     կրթություն
+                </p>
                 <img
                   className="d-block w-100 img"
-                  src={img3}
+                  src={img2}
                   alt="First slide"
                 />
                 <MDBMask overlay="black-light" />
@@ -34,9 +37,13 @@ class CarouselPage extends Component {
             </MDBCarouselItem>
             <MDBCarouselItem itemId="2">
               <MDBView>
+               <p className="d-block w-100 carouselTxt">
+                   դաստիարակություն  
+                 </p>
+                 
                 <img
                   className="d-block w-100 img"
-                  src={img2}
+                  src={img1}
                   alt="Second slide"
                 />
                 <MDBMask overlay="black-strong" />
@@ -44,9 +51,12 @@ class CarouselPage extends Component {
             </MDBCarouselItem>
             <MDBCarouselItem itemId="3">
               <MDBView>
+                 <p className="d-block w-100 carouselTxt">
+                          ժամանց
+                 </p>
                 <img
                   className="d-block w-100 img"
-                  src={img1}
+                  src={img3}
                   alt="Third slide"
                 />
                 <MDBMask overlay="black-slight" />
