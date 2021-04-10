@@ -18,6 +18,7 @@ import MiddleGroup from './components/hiddenComponents/middleGroup';
 import SeniorGroup from './components/hiddenComponents/seniorGroup';
 import Contacts from './pages/contacts';
 import  GalleryPage from './pages/gallery';
+import Comments from './pages/comments';
 
 
 
@@ -47,6 +48,11 @@ const navItems=[
   },
   {
     id:5,
+    path:'/comments',
+    component:'Կարծիքներ'
+  },
+  {
+    id:6,
     path:'/contacts',
     component:'Կապ'
   }
@@ -104,6 +110,7 @@ class  App extends React.Component{
         />
          <Route path="/contacts" component={Contacts} />
          <Route path="/gallery"  render={()=> <GalleryPage />} />
+         <Route path="/comments"  render={()=> <Comments />} />
 
          </div>
   ); 

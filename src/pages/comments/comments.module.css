@@ -1,0 +1,71 @@
+.commentsPage{
+    width: 100%;
+    height: auto;
+    background-color:  rgb(243, 231, 166);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:25% ;
+}
+.inputs{
+    width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.name,.Lname{
+    width: 60%;
+    padding: 10px;
+    margin-left: 20%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(87, 57, 57);
+}
+.comment{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(87, 57, 57);
+}
+.addBtn{
+    width: 20%;
+    border-radius: 10px;
+    border: 2px solid rgb(87, 57, 57);
+    padding: 10px;
+    margin:10px 40%;
+    background-color: rgb(206, 248, 16);
+}
+.commentBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 98%;
+    list-style: none;
+    margin-top: 3%;
+}
+.commentBoxHeader{
+ margin-bottom: 2%;
+ margin-left: 2%;
+ font-style: italic;
+ font-weight: 600;
+ font-size: 20px;
+}
+.commentLine{
+     width: 60%;
+     padding: 5px;
+     text-decoration: none;
+     border: 2px solid rgb(128, 87, 35);
+     border-radius: 10px;
+     margin-bottom: 5px;
+}
+.nameLname{
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.comName{
+    padding-left: 15px;
+}
